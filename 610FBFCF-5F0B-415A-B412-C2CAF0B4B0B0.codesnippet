@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>-(void) registerWithTouchDispatcher
+{
+	[[[CCDirector sharedDirector] touchDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:NO];
+}
+
+- (BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
+    BOOL retval = NO;    
+    CGPoint location = [[CCDirector sharedDirector] convertToGL:[touch locationInView:touch.view]];
+
+    
+    return retval;
+}
+
+- (void) ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event {
+    CGPoint location = [[CCDirector sharedDirector] convertToGL:[touch locationInView:touch.view]];
+    
+}
+
+- (void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event {
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>610FBFCF-5F0B-415A-B412-C2CAF0B4B0B0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Touches</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
